@@ -1,5 +1,8 @@
 <template name="postsList">
+  {{#if currentUser}}
   <input type="checkbox"> Show Mine
+  {{/if}}
+
   <div class="posts">
     {{#each posts}}
     {{> postItem}}
