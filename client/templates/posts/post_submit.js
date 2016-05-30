@@ -16,3 +16,13 @@ Template.postSubmit.events({
     });
   }
 });
+
+Template.postSubmit.helpers({
+
+})
+
+Template.postSubmit.rendered = function(){
+  $('.summernote').summernote({
+  height: 200
+});
+}

@@ -24,3 +24,7 @@ accounts-password
 standard-minifier-css
 standard-minifier-js
 reactive-var
+froala:editor
+fortawesome:fontawesome
+froala:editor-reactive
+summernote:summernote

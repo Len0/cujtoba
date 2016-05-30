@@ -7,7 +7,7 @@ Template.postsList.helpers({
     else{
         return Posts.find({}, {sort: {submitted: -1}});
     }
-  }
+  },
 });
 
 Template.postsList.events({
