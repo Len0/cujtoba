@@ -16,10 +16,8 @@ es5-shim                # ECMAScript 5 compatibility for older browsers.
 ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 underscore
-mizzao:bootstrap-3
 iron:router
 sacha:spin
-ian:accounts-ui-bootstrap-3
 accounts-password
 standard-minifier-css
 standard-minifier-js
@@ -28,3 +26,6 @@ froala:editor
 fortawesome:fontawesome
 froala:editor-reactive
 summernote:summernote
+ian:accounts-ui-bootstrap-3
+juliancwirko:s-alert
+kevohagan:sweetalert

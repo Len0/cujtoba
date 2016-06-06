@@ -158,3 +158,9 @@ body {
   margin-bottom: 5px;
   pointer-events: auto;
 }
+
+.truncate {
+
+  overflow: hidden;
+
+}

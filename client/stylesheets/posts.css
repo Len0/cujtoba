@@ -1,0 +1,19 @@
+.post {
+  height: 350px;
+}
+
+.post_title {
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+.post_content {
+  font-size: 11pt;
+  height: 30px;
+}
+
+.post_read_more {
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  color: gray;
+}

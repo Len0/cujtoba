@@ -1,16 +1,35 @@
 <template name="postItem">
-  <div class="post">
-    <div class="post-content">
-      <h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
-      <p>
-        submitted by {{author}}
+  <div class="post col-lg-4 col-sm-6 col-xs-6 ">
+    <div class="post_containder">
+      <a href="#" class="thumbnail">
+        <img src="http://placehold.it/350x150" class="img-responsive">
+      </a>
+
+      <p class="post_title">
+        <a href="{{url}}">{{title}}</a>
+      </p>
+      <div class="truncate">
+        <p class="post_content">
+          <span>{{{shortIt content 120}}}</span>
+        </p>
+      </div>
+      <p class="post_read_more">
+        <!--<i class="fa fa-angle-double-down" aria-hidden="true"></i>-->
+        <i class="fa fa-caret-down" aria-hidden="true"></i>
+      </p>
+
+      <p class="post_footer">
+        Author: {{author}}
         {{#if ownPost}}
-          <a href="{{pathFor 'postEdit'}}">Edit</a>
-          <a href="#" class="post_delete">Delete</a>
+        <a href="{{pathFor 'postEdit'}}">
+          <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="post_delete">
+          <i class="fa fa-trash-o" aria-hidden="true"></i>
+        </a>
         {{/if}}
+        <a href="{{pathFor 'postPage'}}" class="discuss btn btn-default">Discuss <i class="fa fa-comments" aria-hidden="true"></i></a>
       </p>
     </div>
-    <a href="{{pathFor 'postPage'}}" class="discuss btn btn-default">Discuss</a
-      >
-    </div>
-  </template>
+  </div>
+</template>
