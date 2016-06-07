@@ -4,34 +4,29 @@
       <div class=".row">
         <div class="btn-toolbar btn-sm">
           <div class="btn-group">
-            <button type="submit" value="Submit" class="btn btn-primary btn-xs">
+            <button type="submit" value="Publish" id="post_submit_publish_button" class="btn btn-primary btn-xs">
               <i class="fa fa-plus-circle" aria-hidden="true"></i>
-              Submit
+              Publish
             </button>
-            <button type="submit" value="Save" class="btn btn-success btn-xs">
+            <button type="submit" value="Save" id="post_submit_save_button" class="btn btn-success btn-xs">
               <i class="fa fa-floppy-o" aria-hidden="true"></i>
               Save
             </button>
-            <button type="submit" value="Delete" class="btn btn-danger btn-xs">
-              <i class="fa fa-trash-o" aria-hidden="true"></i>
-              Delete
-            </button>
           </div>
-          <button type="submit" value="Cancel" class="btn btn-warning btn-xs">
+          <button type="submit" value="Cancel" id="post_submit_cancel_button" class="btn btn-warning btn-xs">
             <i class="fa fa-times" aria-hidden="true"></i>
             Cancel
           </button>
-
         </div>
       </div>
       <div class=".row">
         <label class="control-label" for="title">Title</label>
         <div class="controls">
-          <input name="post_title" id="post_title" type="text" value="" placeholder="Your Title" class="form-control"/>
+          <input name="post_title" id="post_submit_title_textbox" type="text" value="" placeholder="Your Title" class="form-control"/>
         </div>
         <label class="control-label" for="title">Content</label>
-        <div class="controls">
-          {{> editor}}
+        <div class="controls" id="post_submit_content_textbox">
+          {{> submit_editor}}
         </div>
       </div>
     </div>
@@ -39,6 +34,6 @@
 </template>
 
 
-<template name="editor">
-  <div id="post_content" class="summernote"></div>
+<template name="submit_editor">
+  <div id="post_content" class="summernote_submit"></div>
 </template>

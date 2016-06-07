@@ -46,12 +46,24 @@ Template.postItem.events({
               Router.go('postsList', {_id: result._id});
             }
           });
-          swal("Deleted!", "Your imaginary file has been deleted.", "success");
+          // Automate closing of info dialog window
+          swal({
+            title: "Deleted!",
+            text: "Your imaginary file has been deleted.",
+            type: "success",
+            timer: 1000,
+            showConfirmButton: false
+          });
+          // Go back to homepage with list of all posts
           Router.go('postsList');
         }
         else {
           swal("Cancelled", "Your imaginary file is safe", "error");
         }
       });
+    },
+
+    'click .post_edit': function(event){
+      event.preventDefault();
     }
   });
