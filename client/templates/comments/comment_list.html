@@ -1,0 +1,9 @@
+<template name="commentList">
+  <form class="main form">
+    <div class="form-group">
+      {{#each comments}}
+      {{> commentItem}}
+      {{/each}}
+    </div>
+  </form>
+</template>

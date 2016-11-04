@@ -17,3 +17,27 @@
   text-align: center;
   color: gray;
 }
+
+.post_view {
+  height: auto;
+}
+
+.post_view_title {
+  font-weight: bold;
+  font-size: 14pt;
+  padding-left: 5px;
+}
+
+.post_view_container {
+  height: auto;
+}
+
+.post_view_comments{
+  padding: 10px;
+}
+
+.post_view_content {
+  font-size: 11pt;
+  padding: 15px;
+  height: auto;
+}

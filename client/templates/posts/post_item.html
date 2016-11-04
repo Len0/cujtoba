@@ -1,23 +1,26 @@
 <template name="postItem">
   <div class="post col-lg-4 col-sm-6 col-xs-6 ">
     <div class="post_containder">
-      <a href="#" class="thumbnail">
-        <img src="http://placehold.it/350x150" class="img-responsive">
-      </a>
+      <a href="{{pathFor 'postView'}}">
+        <a href="#" class="thumbnail">
+          <img src="http://placehold.it/350x150" class="img-responsive">
+        </a>
 
-      <p class="post_title">
-        <a href="{{url}}">{{title}}</a>
-      </p>
-      <div class="truncate">
-        <p class="post_content">
-          <span>{{{shortIt content 120}}}</span>
+        <p class="post_title">
+          <a href="{{url}}">{{title}}</a>
         </p>
-      </div>
-      <p class="post_read_more">
-        <!--<i class="fa fa-angle-double-down" aria-hidden="true"></i>-->
-        <i class="fa fa-caret-down" aria-hidden="true"></i>
-      </p>
+        
+        <div class="truncate">
+          <p class="post_content">
+            <span>{{{shortIt content 120}}}</span>
+          </p>
+        </div>
 
+        <p class="post_read_more">
+          <!--<i class="fa fa-angle-double-down" aria-hidden="true"></i>-->
+          <i class="fa" aria-hidden="true"></i>
+        </p>
+      </a>
       <p class="post_footer">
         Author: {{author}}
         {{#if ownPost}}

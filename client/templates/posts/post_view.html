@@ -1,0 +1,40 @@
+<template name="postView">
+  <div class="post_view col-lg-12 col-sm-12 col-xs-12 ">
+    <div class="post_view_container thumbnail">
+      <a href="#" class="thumbnail">
+        <img src="http://placehold.it/350x150" class="img-responsive">
+      </a>
+
+      <p class="post_view_title">
+        <a href="{{url}}">{{title}}</a>
+      </p>
+      <div class="truncate">
+        <p class="post_view_content">
+          <span>{{{ content }}}</span>
+        </p>
+      </div>
+
+      <p class="post_view_footer">
+        Author: {{author}}
+        {{#if ownPost}}
+        <a href="{{ pathFor 'postEdit' }}">
+          <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="post_delete">
+          <i class="fa fa-trash-o" aria-hidden="true"></i>
+        </a>
+        {{/if}}
+      </p>
+
+      {{ > commentSubmit postId = _id }}
+
+      <p class="post_read_more">
+        <!--<i class="fa fa-angle-double-down" aria-hidden="true"></i>-->
+        <i class="fa" aria-hidden="true"></i>
+      </p>
+
+      {{ > commentList postId = _id }}
+
+    </div>
+  </div>
+</template>
