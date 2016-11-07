@@ -1,11 +1,13 @@
 Template.commentSubmit.events({
-  'click #post_comment_textarea_submit': function(event) {
+  'submit .main-form': function(event) {
     event.preventDefault();
     var comment = {
-      content: $('#post_comment_textarea').val(),
+      content: event.target.post_comment.value,
       postId: Template.currentData().postId,
+      parrentId: Template.currentData().parrent,
       published: true
     };
+
     Meteor.call('commentInsert', comment, function(error, result) {
       if(error){
         throw error;

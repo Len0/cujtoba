@@ -26,14 +26,9 @@
         {{/if}}
       </p>
 
-      {{ > commentSubmit postId = _id }}
+      {{ > commentSubmit postId = _id parrent = null }}
 
-      <p class="post_read_more">
-        <!--<i class="fa fa-angle-double-down" aria-hidden="true"></i>-->
-        <i class="fa" aria-hidden="true"></i>
-      </p>
-
-      {{ > commentList postId = _id }}
+      {{ > commentList postId = _id parrent = null }}
 
     </div>
   </div>

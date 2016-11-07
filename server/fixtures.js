@@ -12,3 +12,13 @@ if (Posts.find().count() === 0) {
     url: 'http://themeteorbook.com'
   });
 }
+
+/*Comments.insert({
+  id: '8knH8au7QSGR4aaaa',
+  author: 'admin',
+  content:'ChildComment.',
+  postId:'aPS6wF7j7admERxvN',
+  userId:'oQ4fwrFF8HjcrDxan',
+  parentId:'HBjsX5tkFz5bsDbaQ',
+  published:true
+});*/
