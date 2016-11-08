@@ -1,21 +1,25 @@
 <template name="commentItem">
     <div class="comment_item_main_view">
-      <div class="comment_item_main_view_info">
-        <span class="comment_item_main_view_info_author">
-          {{ author }}
-        </span>
-        <span class="comment_item_main_view_info_date">
-          {{ formatDate submitted }}
-        </span>
-        <span class="comment_item_main_view_info_reply">
-          <a class="comment_item_main_view_info_reply_link">Reply <i class="fa fa-comments" aria-hidden="true"></i></a>
-        </span>
-      </div>
-      <div class="comment_item_main_view_content">
-        {{ content }}
-      </div>
-      <div class="comment_item_main_view_reply" id={{_id}}>
-        {{ > commentSubmit parrent = _id }}
+      <div class="comment_item_main_view_item">
+        <div class="comment_item_main_view_item_info">
+          <span class="comment_item_main_view_item_author">
+            {{ author }}
+          </span>
+          <span class="comment_item_main_view_item_info_date">
+            {{ formatDate submitted }}
+          </span>
+          <span class="comment_item_main_view_item_info_reply">
+            <a class="comment_item_main_view_item_info_reply_link">Reply <i class="fa fa-comments" aria-hidden="true"></i></a>
+          </span>
+        </div>
+        <div class="comment_item_main_view_item_content">
+          {{ content }}
+        </div>
+        <div class="comment_item_main_view_item_reply">
+          {{#if commentFormHidden}}
+              {{ > commentSubmit parrent = _id }}
+          {{/if}}
+        </div>
       </div>
       <div class="comment_item_main_view_replies">
         {{ > commentList parrent = _id }}
