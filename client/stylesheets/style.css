@@ -20,7 +20,12 @@ body {
   width: 100%;
 }
 
+.nav{
+  text-align: center;
+}
+
 .navbar {
+
   margin-bottom: 10px; }
   /* line 32, ../sass/style.scss */
   .navbar .navbar-inner {
@@ -162,5 +167,13 @@ body {
 .truncate {
 
   overflow: hidden;
+
+}
+
+.header_user_actions{
+
+}
+
+.header_user_notifications{
 
 }

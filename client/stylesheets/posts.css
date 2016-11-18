@@ -22,6 +22,10 @@
   height: auto;
 }
 
+.post_view_discussion{
+  padding-left: 10px;
+}
+
 .post_view_title {
   font-weight: bold;
   font-size: 14pt;

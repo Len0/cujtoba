@@ -25,11 +25,15 @@
         </a>
         {{/if}}
       </p>
-
-      {{ > commentSubmit postId = _id parrent = null }}
-
-      {{ > commentList postId = _id parrent = null }}
-
+      <div class="post_view_discussion">
+        <div class="post_view_comment">
+          {{ > commentSubmit postId = _id parrent = null }}
+        </div>
+        <p class="post_read_more"></p>
+        <div class="post_view_comment_list">
+          {{ > commentList postId = _id parrent = null }}
+        </div>
+      </div>
     </div>
   </div>
 </template>

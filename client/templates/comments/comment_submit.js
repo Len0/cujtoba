@@ -1,6 +1,7 @@
 Template.commentSubmit.events({
   'submit .main-form': function(event) {
     event.preventDefault();
+
     var comment = {
       content: event.target.post_comment.value,
       postId: Template.currentData().postId,
@@ -20,7 +21,6 @@ Template.commentSubmit.events({
         timer: 1500,
         showConfirmButton: false
       });
-
     });
   }
 });
@@ -30,5 +30,4 @@ Template.commentSubmit.helpers({
 });
 
 Template.commentSubmit.rendered = function(){
-
 }

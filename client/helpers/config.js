@@ -4,3 +4,5 @@ Accounts.ui.config({
 
 Meteor.subscribe('comments');
 Meteor.subscribe('posts');
+Meteor.subscribe('messages');
+Meteor.subscribe('users');
