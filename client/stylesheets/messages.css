@@ -1,0 +1,58 @@
+#message_page_box_chat_textarea{
+  width: 100%;
+}
+.message_page_chat_view{
+  min-height: 400px;
+  height: auto;
+}
+
+.messages_page_box_chat_send{
+  float: right;
+}
+
+.messages_page_user_list_item_username{
+
+}
+
+.messages_page_user_list_item{
+  padding: 3px;
+  font-weight: bold;
+}
+.messages_page_user_list_item_selected{
+    background-color: #a4c5fc;
+}
+
+.messages_item_date{
+  float: right;
+  text-align: right;
+}
+
+.messages_item_text{
+  float: left;
+}
+
+.messages_item{
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #e8e8e8;
+}
+
+.messages_item_text_user{
+  text-align: right;
+  background-color: #c4daff;
+  margin-bottom: 5px;
+}
+
+
+
+.message_page_chat_view{
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+.messages_view_list{
+
+
+
+}

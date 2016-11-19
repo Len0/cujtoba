@@ -1,5 +1,7 @@
 <template name="messagesView">
-  <div class="comment_list_main">
-
+  <div class="messages_view_list">
+      {{#each messages}}
+        {{ > messagesItem }}
+      {{/each}}
   </div>
 </template>

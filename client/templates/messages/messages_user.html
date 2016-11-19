@@ -1,5 +1,6 @@
 <template name="messagesPageUser">
-  <div class="messages_page_user_list_item">
-    <p>{{username}}</p>
+  <div class="messages_page_user_list_item {{selectedClass}}">
+    <p class="messages_page_user_list_item_username">{{username}}</p>
+    <p class="hidden" id="message_page_user_list_item_id">{{_id}}</p>
   </div>
 </template>
