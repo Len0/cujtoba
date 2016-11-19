@@ -1,0 +1,26 @@
+<template name="usersItem">
+    <div class="user_page_item col-lg-2 col-sm-2 col-xs-2 thumbnail">
+      <div class="user_page_item_avatar">
+          <p><i class="fa fa-users fa-3x" aria-hidden="true"></i></p>
+      </div>
+      <div class="user_page_item_username">
+        <p>{{username}}</p>
+      </div>
+      <div class="user_page_item_info">
+        <p>Info</p>
+      </div>
+      {{#if currentUser}}
+      <div class="user_page_item_add">
+        <button type="button" class="btn btn-primary">
+          <i class="fa fa-plus" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div class="user_page_item_remove">
+        <button type="button" class="btn btn-danger">
+          <i class="fa fa-minus" aria-hidden="true"></i>
+        </button>
+      </div>
+      {{/if}}
+    </div>
+</template>

@@ -1,0 +1,8 @@
+.user_page_item{
+  text-align: center;
+  padding: 15px;
+}
+
+.user_page_item_username{
+  font-weight: bold;
+}

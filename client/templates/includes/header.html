@@ -15,8 +15,8 @@
       <ul class="nav navbar-nav navbar-left">
         {{#if currentUser}}
             <li><a href="{{pathFor 'postSubmit'}}"><i class="fa fa-plus-square" aria-hidden="true"> Post</i></a></li>
-            <li><a href="{{pathFor 'postSubmit'}}"><i class="fa fa-search" aria-hidden="true"> Search</i></a></li>
         {{/if}}
+            <li><a href="{{pathFor 'usersPage'}}"><i class="fa fa-search" aria-hidden="true"> Search</i></a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         {{> loginButtons}}
