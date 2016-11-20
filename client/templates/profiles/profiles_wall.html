@@ -1,0 +1,11 @@
+<template name="profilesWall">
+  <div class="row-fluid">
+    <div class="profiles_wall col-lg-12 col-sm-12 col-xs-12">
+      <div class="profiles_wall_view">
+        {{#each selfposts}}
+        {{> postItem}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</template>

@@ -1,5 +1,5 @@
-Template.usersItem.events({
-  'click .user_page_item_add': function(event){
+Template.subscriptionsItem.events({
+  'click .subscriptions_page_item_add': function(event){
     event.preventDefault();
     event.stopPropagation();
 
@@ -21,7 +21,7 @@ Template.usersItem.events({
 
       });
     },
-  'click .user_page_item_remove': function(event){
+  'click .subscriptions_page_item_remove': function(event){
     event.preventDefault();
     event.stopPropagation();
 
@@ -45,13 +45,13 @@ Template.usersItem.events({
   }
   });
 
-Template.usersItem.helpers({
+Template.subscriptionsItem.helpers({
   isSubscribed: function(){
     var existingSubscription = Subscriptions.find({userId: Meteor.userId(), subscriptionId: this._id}).count();
     return  existingSubscription >  0;
   }
 });
 
-Template.usersItem.rendered = function(){
+Template.subscriptionsItem.rendered = function(){
 
 }

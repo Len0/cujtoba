@@ -1,5 +1,6 @@
 .post {
-  height: 350px;
+  height: 300px;
+  width: 200px
 }
 
 .post_title {
@@ -44,4 +45,11 @@
   font-size: 11pt;
   padding: 15px;
   height: auto;
+}
+
+.posts_no_subscriptions{
+  font-weight: bold;
+  font-size: 25pt;
+  color: #ff9e66;
+  text-align: center;
 }

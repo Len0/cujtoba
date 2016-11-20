@@ -1,0 +1,16 @@
+<template name="profilesPage">
+  <div class="row">
+    <div class="profiles_page col-lg-12 col-sm-12 col-xs-12">
+      <div class="profiles_page_user col-lg-3 col-sm-3 col-xs-3">
+        {{> profilesInfo}}
+      </div>
+      <div class="profiles_page_wall col-lg-9 col-sm-9 col-xs-9">
+        <div class="row">
+          <div class="profiles_page_chat_wall_view col-lg-10 col-sm-10 col-xs-10"  id="message_page_chat_view_scroll">
+            {{ > profilesWall }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

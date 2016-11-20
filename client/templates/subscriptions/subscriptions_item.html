@@ -1,25 +1,25 @@
-<template name="usersItem">
-    <div class="user_page_item col-lg-2 col-sm-2 col-xs-2 thumbnail">
-      <a class='user_page_item_link' href="{{pathFor 'profilesPage'}}">
-        <div class="user_page_item_avatar">
+<template name="subscriptionsItem">
+    <div class="subscriptions_page_item col-lg-2 col-sm-2 col-xs-2 thumbnail">
+      <a class='subscription_page_item_link' href="{{pathFor 'profilesPage'}}">
+        <div class="subscriptions_page_item_avatar">
             <p><i class="fa fa-users fa-3x" aria-hidden="true"></i></p>
         </div>
-        <div class="user_page_item_username">
+        <div class="subscriptions_page_item_username">
           <p>{{username}}</p>
         </div>
-        <div class="user_page_item_info">
+        <div class="subscriptions_page_item_info">
           <p>Info</p>
         </div>
       </a>
       {{#if currentUser}}
         {{#if isSubscribed}}
-        <div class="user_page_item_remove">
+        <div class="subscriptions_page_item_remove">
           <button type="button" class="btn btn-danger">
             <i class="fa fa-minus" aria-hidden="true"></i>
           </button>
         </div>
         {{else}}
-        <div class="user_page_item_add">
+        <div class="subscriptions_page_item_add">
           <button type="button" class="btn btn-primary">
             <i class="fa fa-plus" aria-hidden="true"></i>
           </button>

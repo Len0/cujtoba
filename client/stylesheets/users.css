@@ -6,3 +6,8 @@
 .user_page_item_username{
   font-weight: bold;
 }
+
+.user_page_item_link{
+  color: inherit;
+  text-decoration: none;
+}

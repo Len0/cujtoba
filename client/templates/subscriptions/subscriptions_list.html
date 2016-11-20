@@ -1,0 +1,21 @@
+<template name="subscriptionsList">
+  <div class="subscriptions_page_list row row-fluid">
+    <p class="subscriptions_page_list_labels"> Requests </p>
+      {{#each awaitingSubscriptions}}
+        {{> subscriptionsItem}}
+      {{else}}
+        <span>No active requests.</span>
+      {{/each}}
+  </div>
+  <p class="post_read_more">
+    <!--<i class="fa fa-angle-double-down" aria-hidden="true"></i>-->
+    <i class="fa" aria-hidden="true"></i>
+  </p>
+  <div class="subscriptions_page_list row row-fluid">
+    <p class="subscriptions_page_list_labels"> Subscriptions </p>
+      {{#each subscriptions}}
+        {{> subscriptionsItem}}
+      {{/each}}
+  </div>
+
+</template>

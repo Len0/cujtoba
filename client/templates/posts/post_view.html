@@ -27,7 +27,9 @@
       </p>
       <div class="post_view_discussion">
         <div class="post_view_comment">
+          {{#if currentUser}}
           {{ > commentSubmit postId = _id parrent = null }}
+          {{/if}}
         </div>
         <p class="post_read_more"></p>
         <div class="post_view_comment_list">
