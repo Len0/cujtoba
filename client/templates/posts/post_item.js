@@ -23,7 +23,7 @@ Template.postItem.events({
     post = Posts.findOne({_id:this._id});
     swal({
       title: "Are you sure?",
-      text: "You will not be able to recover this imaginary file!",
+      text: "You will not be able to recover this post!",
       type: "warning",
       showCancelButton: true,
       confirmButtonColor: "#DD6B55",
@@ -49,7 +49,7 @@ Template.postItem.events({
           // Automate closing of info dialog window
           swal({
             title: "Deleted!",
-            text: "Your imaginary file has been deleted.",
+            text: "Your post has been deleted.",
             type: "success",
             timer: 1000,
             showConfirmButton: false
@@ -58,7 +58,7 @@ Template.postItem.events({
           Router.go('postsList');
         }
         else {
-          swal("Cancelled", "Your imaginary file is safe", "error");
+          swal("Cancelled", "Your actions are cancelled.", "error");
         }
       });
     },

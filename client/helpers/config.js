@@ -6,3 +6,4 @@ Meteor.subscribe('comments');
 Meteor.subscribe('posts');
 Meteor.subscribe('messages');
 Meteor.subscribe('users');
+Meteor.subscribe('subscriptions');

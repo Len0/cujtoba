@@ -18,18 +18,6 @@ Template.postSubmit.events({
     });
   },
 
-  'click #post_submit_save_button': function(event){
-    event.preventDefault();
-    var post = {
-      title: $('#post_submit_title_textbox').val(),
-      content: $('.summernote_submit').summernote('code'),
-      published: false
-    };
-    Meteor.call('postInsert', post, function(error, result){
-      
-    })
-  },
-
   'click #post_submit_cancel_button': function(event){
     event.preventDefault();
     Router.go('postsList');

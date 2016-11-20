@@ -24,6 +24,5 @@ Template.messagesPage.helpers({
 });
 
 Template.messagesPage.rendered = function(){
-    objDiv = $('#message_page_chat_view_scroll');
-    objDiv[0].scrollTop = objDiv[0].scrollHeight;
+
 }

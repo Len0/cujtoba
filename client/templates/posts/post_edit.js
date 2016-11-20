@@ -21,12 +21,22 @@ Template.postEdit.events({
 'click #post_edit_save_button': function(event){
   event.preventDefault();
   var post = {
-    title: $('#post_submit_title_textbox').val(),
-    content: $('.summernote_submit').summernote('code'),
-    published: false
+    _id: this._id,
+    title: $('#post_edit_title_textbox').val(),
+    content: $('.summernote_edit').summernote('code'),
+    published: this.published
   };
-  Meteor.call('postInsert', post, function(error, result){
+  Meteor.call('postUpdate', post, function(error, result){
 
+    if(result.result == 'updated_post'){
+      swal({
+        title: "Saved!",
+        text: "Your changes are saved.",
+        type: "success",
+        timer: 1000,
+        showConfirmButton: false
+      });
+    }
   })
 },
 

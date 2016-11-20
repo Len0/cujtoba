@@ -13,3 +13,7 @@ Meteor.publish('messages', function() {
 Meteor.publish('users', function() {
   return Meteor.users.find();
 });
+
+Meteor.publish('subscriptions', function() {
+  return Subscriptions.find();
+});
