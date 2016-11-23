@@ -17,3 +17,23 @@ Meteor.publish('users', function() {
 Meteor.publish('subscriptions', function() {
   return Subscriptions.find();
 });
+
+Meteor.publish('albums', function() {
+  return Albums.find();
+});
+
+Meteor.publish('images', function() {
+  return Images.find();
+});
+
+Meteor.publish('memberships', function() {
+  return Memberships.find();
+});
+
+Meteor.publish('tags', function() {
+  return Tags.find();
+});
+
+Meteor.publish('votes', function() {
+  return Votes.find();
+});

@@ -1,13 +1,6 @@
 <template name="postsList">
-  {{#if currentUser}}
-  <input type="checkbox"> Show Mine
-  {{/if}}
 
   <div class="posts row-fluid">
-      {{#each posts}}
-      {{> postItem}}
-      {{else}}
       <p class="posts_no_subscriptions"> Make friends, subscribe, share, like! </P>
-      {{/each}}
   </div>
 </template>

@@ -1,0 +1,22 @@
+<template name="albumsItem">
+    <div class="user_page_item col-lg-2 col-sm-2 col-xs-2 thumbnail">
+      <a class='user_page_item_link' href="{{pathFor 'albumsView'}}">
+        <div class="user_page_item_avatar">
+            <p><i class="fa fa-users fa-3x" aria-hidden="true"></i></p>
+        </div>
+        <div class="user_page_item_username">
+          <p>{{title}}</p>
+        </div>
+        <div class="user_page_item_info">
+          <p>{{{shortIt description 120 }}}</p>
+        </div>
+      </a>
+      {{#if currentUser}}
+        <div class="album_page_item_remove">
+          <button type="button" class="btn btn-danger">
+            <i class="fa fa-minus" aria-hidden="true"></i>
+          </button>
+        </div>
+      {{/if}}
+    </div>
+</template>

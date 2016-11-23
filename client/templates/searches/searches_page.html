@@ -1,0 +1,35 @@
+<template name="searchesPage">
+  <div class="searchesPage_page_box">
+  <form class="main-form-search-box">
+    <div class="form-group-search-box">
+      <div class=".row">
+          <div class="search_page_box_chat_input">
+              <input name="search_page_input" id="search_page_input" rows="3"  placeholder="Place a search...">
+          </div>
+        </div>
+    </div>
+  </form>
+  <div class="suggestion">
+    <ul>
+      {{#each suggestions}}
+      <li class="search_clickable">
+      {{#if username}}
+         {{username}}
+      {{else}}
+        {{#if tag}}
+          {{tag}}
+        {{else}}
+          {{.}}
+        {{/if}}
+     {{/if}}
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+  <div>
+    {{#each images}}
+    {{ > imagesItem}}
+    {{/each}}
+  </div>
+</div>
+</template>

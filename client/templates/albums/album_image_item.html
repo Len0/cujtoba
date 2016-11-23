@@ -1,0 +1,32 @@
+<template name="albumsImageItem">
+    <div class="user_page_item col-lg-2 col-sm-2 col-xs-2 thumbnail">
+      <a href = "{{url}}">
+        <img  src="{{url}}"  />
+      </a>
+      <p>
+        {{#each this.tags}}
+        #{{.}}
+        {{/each}}
+      </p>
+      <p>
+        {{#each this.users}}
+        @{{.}}
+        {{/each}}
+      </p>
+      {{#if currentUser}}
+        {{#if isAdded}}
+        <div class="album_view_page_item_remove">
+          <button type="button" class="btn btn-danger">
+            <i class="fa fa-minus" aria-hidden="true"></i>
+          </button>
+        </div>
+        {{else}}
+        <div class="album_view_page_item_add">
+          <button type="button" class="btn btn-primary">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+          </button>
+        </div>
+        {{/if}}
+      {{/if}}
+    </div>
+</template>

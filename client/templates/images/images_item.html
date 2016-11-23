@@ -1,0 +1,39 @@
+<template name="imagesItem">
+    <div class="image_page_item col-lg-2 col-sm-2 col-xs-2 thumbnail">
+      <a href = "{{url}}">
+        <img  src="{{url}}" />
+      </a>
+      <p>
+        {{#each this.tags}}
+        #{{.}}
+        {{/each}}
+      </p>
+      <p>
+        {{#each this.users}}
+        @{{.}}
+        {{/each}}
+      </p>
+      <p>Votes: {{voteCount}}</p>
+      {{#if currentUser}}
+        {{#if hasLiked}}
+        <div class="image_page_item_dislike">
+          <button type="button" class="btn btn-danger">
+            Dislike
+          </button>
+        </div>
+      {{else}}
+        <div class="image_page_item_like">
+          <button type="button" class="btn btn-primary">
+            Like
+          </button>
+        </div>
+      {{/if}}
+      {{/if}}
+
+      <div class="image_page_item_remove">
+        <button type="button" class="btn btn-danger">
+          <i class="fa fa-minus" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+</template>

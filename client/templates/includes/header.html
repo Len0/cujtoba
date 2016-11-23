@@ -11,17 +11,17 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="{{pathFor 'postsList'}}">
-        <i class="fa fa-header" aria-hidden="true"></i>
-        <i class="fa fa-header" aria-hidden="true"></i>
-         HaverHaber
+         ImageShare
         </a>
     </div>
     <div class="collapse navbar-collapse" id="navigation">
       <ul class="nav navbar-nav navbar-left">
         {{#if currentUser}}
-            <li><a href="{{pathFor 'postSubmit'}}"><i class="fa fa-plus-square" aria-hidden="true"> Post</i></a></li>
+            <li><a href="{{pathFor 'albumsPage'}}"><i class="fa fa-plus-square" aria-hidden="true"> Albums</i></a></li>
+            <li><a href="{{pathFor 'imagesPage'}}"><i class="fa fa-plus-square" aria-hidden="true"> Images</i></a></li>
         {{/if}}
-            <li><a href="{{pathFor 'usersPage'}}"><i class="fa fa-search" aria-hidden="true"> Search</i></a></li>
+            <li><a href="{{pathFor 'searchesPage'}}"><i class="fa fa-search" aria-hidden="true"> Search</i></a></li>
+            <li><a href="{{pathFor 'usersPage'}}"><i class="fa fa-user" aria-hidden="true"> Users</i></a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         {{> loginButtons}}

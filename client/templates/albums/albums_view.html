@@ -1,0 +1,26 @@
+<template name="albumsView">
+  <div class="row">
+    <div class="albums_view col-lg-12 col-sm-12 col-xs-12">
+      <div class="albums_view_list_info .row">
+        <label class="control-label" for="title">Info</label>
+        <p>{{title}}</p>
+        <p>{{{description}}}</p>
+      </div>
+
+      <div class="albums_view_list_images row row-fluid">
+        <label class="control-label" for="title">Images in album</label>
+          <br/>
+        {{ > albumsItemsList parrent = _id}}
+      </div>
+      <br/>
+      {{#if currentUser}}
+      <div class="albums_view_list_images_not row row-fluid">
+        <label class="control-label" for="title">Add image</label>
+          <br/>
+        {{ > albumsNotItemsList parrent = _id}}
+      </div>
+      {{/if}}
+
+    </div>
+  </div>
+</template>
